@@ -7,7 +7,7 @@ Git commit -m "new commit"
 Git log
 Git log --oneline
 Git push origin main
-Git pull
+Git pull // pull to current branch
 git config --list // check which user is logged in the CLI
 Git branch // list of current existing branches
 Git branch <branch-name> // creates new branch
@@ -41,7 +41,7 @@ Git remote -v // list remotes in repo
 Git remote add <name> <url> // ex: git remote add origin https://github.com/OWNER/REPOSITORY.git
 Git remote rename <old> <new>
 Git remote remove <name>
-Git push
+Git push // push to current branch
 Git push <remote> <branch> // git push origin main|develop
 Git push <remote> <local-branch>:<remote-branch> // git push origin pancake:waffle
 Git push -u <remote> <branch> // configures upstream to use just git push
