@@ -1,0 +1,68 @@
+git status
+Git add . // adds all files to staging
+Git add file1 file2 // adds specific files to staging
+Git init // create a git repo in the current folder
+git reset --hard // removes files from status
+Git commit -m "new commit"
+Git log
+Git log --oneline
+Git push origin main
+Git pull
+git config --list // check which user is logged in the CLI
+Git branch // list of current existing branches
+Git branch <branch-name> // creates new branch
+Git branch -d <branch-name> // delete branch, ensure your not in that branch
+Git branch -m <move> // rename branch, be on current branch you want to rename
+Git switch <branch-name> // changes to branch
+Git switch -c <branch-name> // create a branch and switches to it
+Git clone <url> // downloads code from link
+Git checkout <branch-name> // changes to branch but does more things in the background
+Git checkout -b feature dev // Stackoverflow
+Git merge <branch> // merges the current branch with the specified branch
+Git merge -no-ff <branch> // merge commit
+Git diff // check difference between uncommited changes
+Git stash // saves changes to avoid unstanged from changing directories along with us
+Git stash pop // remove stashed changes
+Git stash apply // applies changes and keeps stash
+Git stash list // check bucket of stashes
+Git stash apply stash@{2} // applies refered id of stash
+Git stash drop stash@{2} // remove saved stash
+Git stash clear // clear all stashes stored
+Git checkout <commit> // get into detached head mode
+Git checkout HEAD~1-3 // previous commit before head
+Git restore <file> // restores a file to previous commit
+Git restore --source HEAD~2 <file> // restore a file to 2nd last commit
+Git restore --staged <file> // remove from staged status
+Git reset <commit-hash> // get rid of the commits previous the one provided
+Git reset -- hard <commit> // get rid of commits and changes files
+Git revert <commit> // undoes changes and then commits a message undoing 
+Git clone <url> // copies from url into local
+Git remote -v // list remotes in repo
+Git remote add <name> <url> // ex: git remote add origin https://github.com/OWNER/REPOSITORY.git
+Git remote rename <old> <new>
+Git remote remove <name>
+Git push
+Git push <remote> <branch> // git push origin main|develop
+Git push <remote> <local-branch>:<remote-branch> // git push origin pancake:waffle
+Git push -u <remote> <branch> // configures upstream to use just git push
+Git branch -r / check remote tracking reference
+Git fetch <remote> <branch> / Ex: git remote origin
+Git pull <remote> <branch> / Ensure there are no files in source control, if so it will ask for fast forward.
+Git pull / defaults to origin remote and gets latest from current branch
+Git rebase master / switch with "git switch feature" to desired branch you wish to add to master. Create copy of branch and checkout there to avoid issues with rebase. Make sure there are no files in source control that need to be committed. The main branch (develop or prod depends) should be up to date with the latest changes. "git rebase develop"
+Git rebase -I HEAD~4 // check last 4 commits
+Git tag // view tags in current repo
+Git tag -l "*text*" // search for wildcard text wildcard
+Git tag -> git checkout <tag id> 
+Git diff <tag id>..<tag id>
+Git tag <tag id> // create lightweight tag
+Git tag -a <tag id>
+Git tag -am "message" <tagid>
+Git show <tag id>
+Git tag my tag <commit id> // tag previous commits
+Git tag -f <tag id> <commit hash> // to move the tag to another commit
+Git tag -d <tag id> // delete tags
+Git push <remote> --tags // push all tags to remote
+Git push <remote> <tag> // push tag to remote
+Git reflog show HEAD // HEAD can be any reference, returns output similar to git log but with more information.
+Git reset --hard <commit hash> 
