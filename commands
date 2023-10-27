@@ -4,9 +4,9 @@ Git add file1 file2 // adds specific files to staging
 Git init // create a git repo in the current folder
 git reset --hard // removes files from status
 Git commit -m "new commit"
-Git log
-Git log --oneline
-Git push origin main
+Git log // outputs history of commits
+Git log --oneline // outputs history of commits in one liner
+Git push origin main // Push commited changes to main branch
 Git pull // pull to current branch
 git config --list // check which user is logged in the CLI
 Git branch // list of current existing branches
@@ -17,7 +17,7 @@ Git switch <branch-name> // changes to branch
 Git switch -c <branch-name> // create a branch and switches to it
 Git clone <url> // downloads code from link
 Git checkout <branch-name> // changes to branch but does more things in the background
-Git checkout -b feature dev // Stackoverflow
+Git checkout -b feature dev // Creates a new branch called feature from dev branch
 Git merge <branch> // merges the current branch with the specified branch
 Git merge -no-ff <branch> // merge commit
 Git diff // check difference between uncommited changes
@@ -38,7 +38,7 @@ Git reset -- hard <commit> // get rid of commits and changes files
 Git revert <commit> // undoes changes and then commits a message undoing 
 Git clone <url> // copies from url into local
 Git remote -v // list remotes in repo
-Git remote add <name> <url> // ex: git remote add origin https://github.com/OWNER/REPOSITORY.git
+Git remote add <name> <url> // ex: git remote add origin https://github.com/OWNER/REPOSITORY.git or git@github.com:OWNER/REPOSITORY.git
 Git remote rename <old> <new>
 Git remote remove <name>
 Git push // push to current branch
