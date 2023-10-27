@@ -66,4 +66,4 @@ Git tag -d <tag id> // delete tags
 Git push <remote> --tags // push all tags to remote
 Git push <remote> <tag> // push tag to remote
 Git reflog show HEAD // HEAD can be any reference, returns output similar to git log but with more information.
-Git reset --hard <commit hash> 
+Git reset --hard <commit hash> // clear working directory to start from the commit hash referenced.
