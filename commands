@@ -57,8 +57,8 @@ Git tag -l "*text*" // search for wildcard text wildcard
 Git checkout <tag id> 
 Git diff <tag id>..<tag id>
 Git tag <tag id> // create lightweight tag
-Git tag -a <tag id>
-Git tag -am "message" <tagid>
+Git tag -a <tag id> // create annotated tag
+Git tag -am "message" <tagid> // create annotated tag with message
 Git show <tag id>
 Git tag my tag <commit id> // tag previous commits
 Git tag -f <tag id> <commit hash> // to move the tag to another commit
