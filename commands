@@ -39,21 +39,22 @@ Git revert <commit> // undoes changes and then commits a message undoing
 Git clone <url> // copies from url into local
 Git remote -v // list remotes in repo
 Git remote add <name> <url> // ex: git remote add origin https://github.com/OWNER/REPOSITORY.git or git@github.com:OWNER/REPOSITORY.git
-Git remote rename <old> <new>
-Git remote remove <name>
+Git remote rename <old> <new> // renames the remote
+Git remote remove <name> // removes remote from git config
 Git push // push to current branch
 Git push <remote> <branch> // git push origin main|develop
 Git push <remote> <local-branch>:<remote-branch> // git push origin pancake:waffle
 Git push -u <remote> <branch> // configures upstream to use just git push
 Git branch -r / check remote tracking reference
-Git fetch <remote> <branch> / Ex: git remote origin
-Git pull <remote> <branch> / Ensure there are no files in source control, if so it will ask for fast forward.
+Git fetch <remote> <branch> // Ex: git fetch origin feature. fetch does not add the code into working local directory unlike git pull
+Git pull // pull current branch
+Git pull <remote> <branch> // Ensure there are no files in source control, if so it will ask for fast forward.
 Git pull / defaults to origin remote and gets latest from current branch
 Git rebase master / switch with "git switch feature" to desired branch you wish to add to master. Create copy of branch and checkout there to avoid issues with rebase. Make sure there are no files in source control that need to be committed. The main branch (develop or prod depends) should be up to date with the latest changes. "git rebase develop"
 Git rebase -I HEAD~4 // check last 4 commits
 Git tag // view tags in current repo
 Git tag -l "*text*" // search for wildcard text wildcard
-Git tag -> git checkout <tag id> 
+Git checkout <tag id> 
 Git diff <tag id>..<tag id>
 Git tag <tag id> // create lightweight tag
 Git tag -a <tag id>
